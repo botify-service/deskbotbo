@@ -97,6 +97,17 @@
         .animate-fade-in-up {
             animation: fadeInUp 0.8s ease-out forwards;
         }
+
+        .logo-container {
+            background: white;
+            padding: 4px;
+            border-radius: 8px;
+            min-width: 44px;
+            min-height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 
@@ -108,9 +119,9 @@
         <div class="max-w-7xl mx-auto px-4 w-full flex justify-between items-center">
             <!-- Logo area -->
             <a href="#" class="flex items-center gap-3 group">
-                <div
-                    class="bg-white p-1 rounded-lg h-11 w-11 flex items-center justify-center transition-transform group-hover:scale-105">
-                    <img src="assets/Logo.jpeg" alt="DeskbotBo Logo" class="h-full w-full object-contain">
+                <div class="logo-container transition-transform group-hover:scale-105">
+                    <img src="assets/Logo.jpeg" alt="DeskbotBo Logo" class="h-full w-full object-contain"
+                        onerror="this.src='assets/logo.jpg';this.onerror=null;">
                 </div>
                 <span class="text-white font-bold text-xl tracking-wide">DeskbotBo</span>
             </a>
@@ -579,7 +590,8 @@
             <!-- Left -->
             <div class="flex flex-col items-center md:items-start gap-4">
                 <div class="flex items-center gap-2">
-                    <img src="assets/Logo.jpeg" alt="Logo" class="h-8 w-8 rounded bg-white p-0.5 object-contain">
+                    <img src="assets/Logo.jpeg" alt="Logo" class="h-8 w-8 rounded bg-white p-0.5 object-contain"
+                        onerror="this.src='assets/logo.jpg';this.onerror=null;">
                     <span class="text-white font-bold text-lg">DeskbotBo</span>
                 </div>
                 <p class="text-gray-500 text-sm">© 2025 DeskbotBo. Hecho en Bolivia 🇧🇴</p>
